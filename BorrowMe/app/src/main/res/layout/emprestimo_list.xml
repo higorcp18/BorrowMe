@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="80dp">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <View android:layout_width="7dp" android:layout_height="match_parent"
+              android:background="@color/colorPrimaryDark"
+              android:id="@+id/btnStatus"/>
+        <TextView
+                android:text="@string/nome_do_produto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textViewProductName" android:layout_weight="1"
+                android:textStyle="bold" android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp" android:id="@+id/view"
+                android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" android:text="@string/textViewData"
+                android:textAlignment="center" android:id="@+id/dataObjetoDevolucao"/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/textview_nome"
+                        android:layout_width="43dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView3" tools:text="Nome: "
+                        android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="30dp"
+                          android:text="@string/textview_nome_pessoa" tools:text="Higor Chaves"
+                          android:id="@+id/nomePessoa"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:text="@string/textview_parentesco"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView4" tools:text="Parentesco: "
+                        android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="30dp"
+                          android:text="@string/text_view_tipo_pessoa" tools:text="Amigo"
+                          android:id="@+id/tvParentesco"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

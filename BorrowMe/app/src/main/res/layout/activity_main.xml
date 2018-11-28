@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.MainActivity"
+        android:gravity="end"
+        android:orientation="vertical">
+
+
+    <ListView
+            android:id="@+id/listViewEmprestimos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+    </ListView>
+
+    <Button android:layout_width="match_parent"
+            android:text="@string/emprestar"
+            android:height="100dp"
+            android:id="@+id/addButton"
+            android:layout_height="50dp" android:visibility="visible" android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/background_light"/>
+
+</RelativeLayout>
